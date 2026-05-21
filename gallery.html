@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation */
+        .nav-links {
+            text-align: center;
+            padding: 20px;
+            background-color: cadetblue;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: aqua;
+        }
+
+        /* Heading */
+        h2 {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            font-size: 35px;
+        }
+
+        /* Gallery Layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 30px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Images */
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+          <a href="index.html">home</a>
+        <a href="about.html">About Me</a>
+        <a href="gallery.html">My Gallery</a>
+        <a href="myproducts.html">My Products</a>
+        <a href="mycontacts.html">Contacts</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <section id="products">
+
+        <h2>My Gallery</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="images/Dress.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/mine.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/yes.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/vow.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/tea.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/nick.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/men.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/okay.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <img src="images/kids.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
